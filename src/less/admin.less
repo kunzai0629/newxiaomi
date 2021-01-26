@@ -1,0 +1,474 @@
+  .admin {
+    padding: 0px 0px 50px 0px;
+    box-sizing: border-box;
+    background: #F2F2F2;
+    .AppUpShow{
+      position:fixed;
+      background: #ffffff;
+      width: 375px;
+      bottom: 0;
+      transform: translateY(100%);
+      left: 0;
+      z-index: 12;
+      padding: 0 16px;
+      .item{
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        i{
+          display: none;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: #ccc;
+          height: 1px;
+          transform: scaleY(0.5);
+        }
+      }
+    .optionSelectActive{
+        color: rgb(0, 57, 219);
+        position: relative;
+        i{
+          display: block;
+        }
+      }
+    }
+    .appUp-pop{
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 11;
+    }
+    .AppUpShowActive{
+      transition:0.3s;
+      transform: translateY(0%);
+    }
+    .sharepage{
+      position: fixed;
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      display: flex;
+    justify-content: flex-end;
+    transition:top 0.3s;
+    z-index: 5;
+    padding: 20px;
+   
+    img{
+      width: 182px;
+      height: 126px;
+    }
+    }
+    .sharepageActive{
+      
+    }
+  }
+  .admin .admin-box {
+    width: 100%;
+    height: 54px;
+    background: #0039db;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    position: sticky;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .admin .admin-box .adminItem {
+    line-height: 44px;
+  }
+  .admin .admin-box .adminactive {
+    position: relative;
+  }
+  .adminactive:before {
+    position: absolute;
+    content: " ";
+    width: 40px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1px;
+  }
+  .admin .deploy {
+  }
+  .admin .deploy .header {
+    background: #0039db;
+    width: 100%;
+    height: 135px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .admin .deploy .header .header-content {
+    width: 345px;
+    height: 150px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    bottom: -30px;
+    border-radius: 5px;
+  }
+  .admin .deploy .header .header-content .title {
+    font-weight: bold;
+    padding: 15px 20px 0px 20px;
+  }
+  .admin .deploy .header .header-content .item-box {
+    display: flex;
+    justify-content: space-around;
+    width: 345px;
+    height: 105px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    align-items: center;
+  }
+  .admin .deploy .header .header-content .item-box .depItem {
+    text-align: center;
+  }
+  .admin .deploy .header .header-content .item-box .depItem img {
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+  }
+  .set-content {
+    background: white;
+    width: 340px;
+    margin: 0 auto;
+  }
+  
+  .admin .deploy .set-content {
+    overflow: hidden;
+  }
+  .admin .deploy .set-content .qiye-box {
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .admin .deploy .set-content .qiye-box .shoping {
+    font-weight: bold;
+  }
+  .admin .deploy .set-content .qiye-box .add {
+    font-size: 14px;
+    color: #3583ff;
+    font-weight: bold;
+  }
+  .admin .deploy .set-content .conmany-box {
+    width: 315px;
+    height: 137px;
+    background: #f9f9f9;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+  }
+  .admin .deploy .set-content .conmany-box .top {
+    display: flex;
+  
+    height: 62px;
+    align-items: center;
+  }
+  .admin .deploy .set-content .conmany-box .top .lf {
+    margin-right: 15px;
+  }
+  .admin .deploy .set-content .conmany-box .top .lf img {
+    width: 50px;
+    height: 50px;
+  }
+  .admin .deploy .set-content .conmany-box .top .rf {
+  }
+  .admin .deploy .set-content .conmany-box .top .rf .company-content {
+    color: #999999;
+    font-size: 12px;
+  
+    height: 62px;
+  }
+  .admin
+    .deploy
+    .set-content
+    .conmany-box
+    .top
+    .rf
+    .company-content
+    .company-name {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .admin .deploy .set-content .conmany-box .bottom {
+    display: flex;
+    justify-content: flex-end;
+    width: 285px;
+    height: 45px;
+    padding-top: 15px;
+    box-sizing: border-box;
+  }
+  .admin .deploy .set-content .conmany-box .bottom .bottomtext {
+    background: #0039db;
+    width: 60px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  .admin .recommend {
+
+
+  }
+  .admin .recommend .header {
+    width: 375px;
+    height: 115px;
+    background: #0039db;
+    padding-top: 15px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+  }
+  .admin .recommend .header .top {
+    width: 345px;
+    height: 44px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+  }
+  .admin .recommend .header .top .company-title {
+    color: #646566;
+    margin-right: 12px;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+
+  }
+  .admin .recommend .header .top .conpany-describe {
+    display: flex;
+    width: 241px;
+    height: 24px;
+    line-height: 24px;
+    justify-content: space-between;
+  }
+  .admin .recommend .header .top .conpany-describe .company-name {
+  }
+  .admin .recommend .header .top .conpany-describe .update {
+    color: #0039db;
+  }
+  .admin .recommend .header .bottom {
+    width: 345px;
+    height: 92px;
+    background: white;
+    margin: 15px auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .admin .recommend .header .bottom .lf {
+    width: 172px;
+    height: 56px;
+  }
+  .admin .recommend .header .bottom .rf {
+    width: 172px;
+    height: 56px;
+    position: relative;
+  }
+  .admin .recommend .header .bottom .rf::before {
+    position: absolute;
+    content: "";
+    background: #0052ff;
+    width: 1px;
+    height: 46px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.2;
+  }
+  .admin .recommend .header .bottom .money-top {
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .admin .recommend .header .bottom .money-top .addUp {
+    width: 52px;
+    height: 20px;
+    background: #0039db;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    box-sizing: border-box;
+    line-height: 20px;
+    padding-right: 10px;
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  .admin .recommend .header .bottom .money-top .addUp span .addUp-title{
+    padding: 0 8px;
+    position: relative;
+    opacity: 0.8;
+  }
+  .admin .recommend .header .bottom .money-top .addUp span .addUp-title::after{
+    position: absolute;
+    top: 50%;
+    right: -1.06667vw;
+    margin-top: -1.33333vw;
+    border: 0.8vw solid;
+    border-color: transparent transparent #dcdee0 #dcdee0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: .8;
+    content: '';
+    
+  }
+  .admin .recommend .header .bottom .money-bottom {
+    font-size: 22px;
+    padding-left: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  .admin .recommend-menu-box{
+   display: flex;
+   margin: 5px 10px 15px 10px;
+  }
+  .admin .recommend-menu-box .item{
+    text-align: center;
+    font-size: 13px;
+    width: 89px;
+    height: 73px;
+  }
+  .admin .recommend-menu-box .item .itemImg img{
+    width: 51px;
+    height: 51px;
+  }
+  .admin .recommend-menu-box .item .itemText{
+
+}
+.admin .recommend-content{
+    width: 345px;
+   background-color: white;
+    margin: 10px auto;
+    padding: 23px 15px 20px 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.admin .recommend-content .recommend-data-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.admin .recommend-content .recommend-data-box .dataItem img{
+    width: 154px;
+    height: 56px;
+}
+.admin .recommend-content .data-form{
+    font-size: 14px;
+       >div:nth-child(odd) {
+        background: #f8f8f8;
+    }
+    >:nth-child(even) {
+        background: #fcfcfc;
+    }
+}
+.admin .recommend-content .data-form .data-form-tr{
+    display: flex;
+    justify-content: space-between;
+    width: 315px;
+    height: 44px;
+    padding: 15px 10px;
+    line-height: 1;
+    
+    .one{
+        text-align: left;
+        flex: 10;
+    }
+    .two{
+        text-align: center;
+        flex: 10;
+    }
+    .three{
+        text-align: center;
+        flex: 8;
+    }
+    .four{
+        text-align: right; 
+        flex: 10;
+    }
+}
+.admin .recommend-content .data-form .data-form-td{
+
+    display: flex;
+    justify-content: space-between;
+    width: 315px;
+    height: 44px;
+    padding: 15px 10px;
+    line-height: 1;
+    
+    .one{
+        text-align: left;
+        flex: 10;
+    }
+    .two{
+        text-align: center;
+        flex: 10;
+    }
+    .three{
+        text-align: center;
+        flex: 8;
+    }
+    .four{
+        text-align: right; 
+        flex: 10;
+    }
+}
+.admin .recommend-content .van-bottom{
+    width: 260px;
+    height: 38px;
+    color: white;
+    display: block;
+    background: #0039db;
+    border: none;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 20px;
+    :first-child{
+        margin-right: 5px;
+    }
+   
+}
+.admin .recommend-content .recommend-hint{
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+}

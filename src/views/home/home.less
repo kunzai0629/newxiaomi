@@ -1,0 +1,134 @@
+.home {
+    padding: 0px 0px 50px 0px;
+    .add-window{
+      position:fixed;
+      background: #ffffff;
+      width: 375px;
+      height: 154px;
+      top: -154px;
+      left: 0;
+      z-index:4;
+      transition:top 0.3s;
+      padding: 20px 0px 5px 0px;
+      .other{
+        font-size: 3.46667vw;
+        color: #666666;
+        padding: 0px 30px 5px 30px;
+      }
+      .tabars-conent{
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+        text-align: center;
+        .conent-items{
+          padding: 16px 8px;
+          .item-box{
+            .item-img{
+              img{
+                width: 51px;
+                height: 51px;
+              }
+            }
+            .item-txt{
+
+            }
+          }
+        }
+      }
+    }
+    .add-null{
+      position: fixed;
+      background-color: rgba(0,0,0,.7);
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      
+      z-index:3;
+    }
+    .windowactive{
+      top:0px;
+    }
+
+  }
+  .home .header {
+    background: url("http://static.jdip.cn/allowance/images/index/header-bd.png?a=2")
+      0 0 /100% auto no-repeat;
+    height: 260px;
+  }
+  .home .header .home-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    padding: 0 15px;
+    height: 44px;
+    background: #0039db;
+  }
+  .home .header .home-top .home-top-company {
+    width: 220px;
+    height: 19px;
+  }
+  .home .header .home-top .home-top-tabint {
+    width: 82px;
+    height: 23px;
+  }
+  .homeitem-v {
+    width: 345px;
+    position: absolute;
+    z-index: 2;
+    top: 57px;
+    left: 15px;
+    right: 15px;
+  }
+  #home-video {
+    width: 100%;
+  }
+  
+  .active {
+    position: relative;
+  }
+  
+  .active:before {
+    position: absolute;
+    content: " ";
+    width: 40px;
+    height: 3px;
+    background-color: rgb(2, 74, 230);
+    text-align: center;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .conclass {
+    padding-bottom: 15px;
+  }
+  .pruImg img {
+    width: 100%;
+    /* 图片设置块状元素去除自带边距 */
+    display: block;
+  }
+  .joinImg img {
+    width: 100%;
+    display: block;
+  }
+  .liuliangbao {
+    background: rgb(2, 74, 230);
+    width: 303px;
+    height: 42px;
+    position: fixed;
+    bottom: 40px;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 44px;
+    padding: 0px 15px;
+    font-size: 14px;
+  }

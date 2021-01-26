@@ -1,0 +1,101 @@
+.openLlb{
+    .van-form{
+        text-align: center;
+        .form-item{
+            background: #ffffff;
+            color: #646566;
+            display: flex;
+            padding: 10px 16px;
+            font-size: 14px;
+           text-align: left;
+           justify-content: space-between;
+           position: relative;
+           box-sizing: border-box;
+           :before {
+            position: absolute;
+            left: 2.13333vw;
+            color: #ee0a24;
+            font-size: 3.73333vw;
+            content: '*';}
+            .item-lf{
+            margin-right: 12px;
+            width: 70px;
+            }
+            .item-rf{
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+              .rf-box{
+                display: flex;
+                justify-content: space-between;
+                flex: 1;
+                
+                ::after{
+                    content: "";
+                    position: absolute;
+                    
+                    box-sizing: border-box;
+                    content: ' ';
+                    pointer-events: none;
+                    right: 4.26667vw;
+                    bottom: 0;
+                    left: 4.26667vw;
+                    border-bottom: 1px solid #ebedf0;
+                    -webkit-transform: scaleY(.5);
+                    transform: scaleY(.5);
+                }
+                .rf-name{
+                    color: #323233;
+                    text-align: left;
+                    input{
+                        border: 0;
+                        outline:none;
+
+                    }
+                }
+                .rf-update{
+                   color: #0039DB;
+                   text-align: right;
+                }
+              }
+
+            }
+        }
+        .info-title{
+            font-size: 16px;
+            background: white;
+            padding-left: 15px;
+            padding-top:15px;
+            margin-top: 5px;
+            text-align: left;
+        }
+        .check-box{
+            margin: 10px;
+            text-align: left;
+            display: flex;
+            .check-icon{
+            width: 20px;
+            height: 20px;
+            background-color: #0039DB;
+            border-radius:50%;
+            border: 1px solid #c8c9cc;
+            }
+            .check-txt{
+
+            }
+        }
+        .open-button{
+            margin: 16px;
+            width: 343px;
+            height: 44px;
+            background: rgb(46, 183, 43);
+            border-radius: 20px;
+            color: white;
+            line-height: 44px;
+            font-size: 14px;
+            :nth-child(1){
+                margin-right: 10px;
+            }
+        }
+    }
+}
