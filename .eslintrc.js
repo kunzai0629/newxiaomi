@@ -10,7 +10,15 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
+
   rules: {
 
-  }
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "process": true,
+    "error": true
+
+    },
 }
