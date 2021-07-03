@@ -1,6 +1,7 @@
 <template>
   <div id="nav">
     <tab></tab>
+    dade dede de de de 
   </div>
   <router-view />
 </template>
